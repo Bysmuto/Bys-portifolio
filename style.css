@@ -1,0 +1,170 @@
+:root {
+  --bg-cor: rgb(27, 22, 27);
+  --func1-color: rgb(40, 241, 215);
+}
+
+body {
+  background-color: var(--bg-cor);
+}
+
+.site {
+  font-family: "Franklin Gothic Medium";
+  color: azure;
+}
+
+.func-color {
+  color: var(--func1-color);
+}
+.func {
+  padding-left: 5%;
+  font-size: 170%;
+}
+
+.func-output {
+  padding-left: 15%;
+  margin: 0%;
+}
+
+i {
+  margin-bottom: 2%;
+  font-size: 150%;
+  display: flex;
+}
+
+.progm-name {
+  font-family: "Franklin Gothic";
+  font-size: 80%;
+  padding-left: 2%;
+}
+
+.parametro {
+  font-style: italic;
+  font-family: "Franklin Gothic";
+}
+
+/* ---------------- Menubar ---------------- */
+.menubar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(26, 21, 26);
+}
+
+#byslogo {
+  text-align: center;
+  width: 10%;
+  padding: 10px;
+}
+#options {
+  font-size: medium;
+  text-align: right;
+}
+
+/* ---------------- Apresentação ---------------- */
+
+#funcA-output1 {
+  font-size: 120%;
+}
+#funcA-output2 {
+  font-size: medium;
+}
+#hand {
+  animation-timing-function: ease;
+  animation-name: hand;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* ---------------- Recursos ---------------- */
+#funcRd {
+  margin-top: 0px;
+}
+
+#funcRp {
+  margin-top: 0px;
+}
+
+/* ---------------- Animação ---------------- */
+
+#funcA {
+  animation: slide-func 2s both;
+  animation-delay: 0.5s;
+}
+
+#outputA {
+  animation: slide-output 2s both;
+  animation-delay: 1.5s;
+}
+
+#funcRd {
+  animation: slide-func 2s both;
+  animation-delay: 2.5s;
+}
+
+#outputRd {
+  animation: slide-output 2s both;
+  animation-delay: 3.5s;
+}
+
+#funcRp {
+  animation: slide-func 2s both;
+  animation-delay: 4.5s;
+}
+
+#outputRp {
+  animation: slide-output 2s both;
+  animation-delay: 5.5s;
+}
+
+@keyframes hand {
+  0% {
+    transform: rotate(0deg);
+    font-size: xx-large;
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slide-func {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-output {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
