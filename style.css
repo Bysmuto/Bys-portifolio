@@ -1,45 +1,52 @@
-:root {
-  --bg-cor: rgb(27, 22, 27);
-  --func1-color: rgb(40, 241, 215);
-}
-
 body {
-  background-color: var(--bg-cor);
+  background-color: rgb(27, 22, 27);
 }
 
 .site {
-  font-family: "Franklin Gothic Medium";
-  color: azure;
+  font-family: 'Open Sans',sans-serif;
+  color: rgb(248, 252, 252);
 }
 
 .func-color {
-  color: var(--func1-color);
+  background: 
+  linear-gradient(
+    3deg,
+    rgb(23, 20, 78) 0%,
+    rgb(7, 207, 218) 58%,
+    rgba(0, 255, 244, 1) 100%
+  );
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .func {
-  padding-left: 5%;
+  padding-left: 20%;
+  font-weight: bolder;
   font-size: 170%;
 }
 
+.parametro {
+  font-size: 90%;
+  font-weight: lighter;
+  font-style: italic;
+}
+
 .func-output {
-  padding-left: 15%;
+  padding-left: 30%;
   margin: 0%;
 }
 
 i {
   margin-bottom: 2%;
-  font-size: 150%;
+  font-size: xx-large;
   display: flex;
 }
 
 .progm-name {
-  font-family: "Franklin Gothic";
-  font-size: 80%;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 55%;
+  
   padding-left: 2%;
-}
-
-.parametro {
-  font-style: italic;
-  font-family: "Franklin Gothic";
 }
 
 /* ---------------- Menubar ---------------- */
@@ -61,19 +68,22 @@ i {
 }
 
 /* ---------------- Apresentação ---------------- */
+#hand {
+  font-size: x-large;
+}
 
 #funcA-output1 {
-  font-size: 120%;
+  font-size: 150%;
 }
 #funcA-output2 {
-  font-size: medium;
+  font-size: 120%;
 }
 #hand {
   animation-timing-function: ease;
   animation-name: hand;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  animation-delay: 5s;
+  animation-delay: s;
   transform-origin: 70% 70%;
   display: inline-block;
 }
@@ -86,43 +96,51 @@ i {
 #funcRp {
   margin-top: 0px;
 }
+/* ---------------- Mobile ---------------- */
+
+@media (max-width: 600px) {
+  #byslogo {
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .func {
+    padding-left: 4%;
+  }
+
+  .func-output {
+    padding-left: 12%;
+  }
+
+  #funcA-output1 {
+    font-size: 150%;
+  }
+  #funcA-output2 {
+    font-size: 110%;
+    padding-bottom: 2%;
+  }
+
+  i {
+    margin-bottom: 4%;
+    font-size: 200%;
+    display: flex;
+  }
+
+  .progm-name {font-size: 50%;
+    font-family: sans-serif;
+
+    padding-left: 2%;
+    padding-top: 4%;
+  }
+}
 
 /* ---------------- Animação ---------------- */
-
-#funcA {
-  animation: slide-func 2s both;
-  animation-delay: 0.5s;
-}
-
-#outputA {
-  animation: slide-output 2s both;
-  animation-delay: 1.5s;
-}
-
-#funcRd {
-  animation: slide-func 2s both;
-  animation-delay: 2.5s;
-}
-
-#outputRd {
-  animation: slide-output 2s both;
-  animation-delay: 3.5s;
-}
-
-#funcRp {
-  animation: slide-func 2s both;
-  animation-delay: 4.5s;
-}
-
-#outputRp {
-  animation: slide-output 2s both;
-  animation-delay: 5.5s;
-}
 
 @keyframes hand {
   0% {
     transform: rotate(0deg);
-    font-size: xx-large;
+    font-size: 150%;
   }
   10% {
     transform: rotate(14deg);
@@ -147,7 +165,7 @@ i {
   }
 }
 
-@keyframes slide-func {
+@keyframes slide-output {
   0% {
     transform: translateX(-1000px);
     opacity: 0;
@@ -158,7 +176,7 @@ i {
   }
 }
 
-@keyframes slide-output {
+@keyframes slide-funcs {
   0% {
     transform: translateY(-1000px);
     opacity: 0;
