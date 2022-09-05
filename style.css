@@ -1,22 +1,18 @@
 body {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(248, 252, 252);
   background-color: rgb(27, 22, 27);
 }
 
-.site {
-  font-family: 'Open Sans',sans-serif;
-  color: rgb(248, 252, 252);
-}
-
 .func-color {
-  background: 
-  linear-gradient(
+  background: linear-gradient(
     3deg,
     rgb(23, 20, 78) 0%,
     rgb(7, 207, 218) 58%,
     rgba(0, 255, 244, 1) 100%
   );
   -webkit-background-clip: text;
-   background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .func {
@@ -31,7 +27,8 @@ body {
   font-style: italic;
 }
 
-.func-output {
+.func-output {font-weight: 700;
+  font-size: 150%;
   padding-left: 30%;
   margin: 0%;
 }
@@ -43,9 +40,9 @@ i {
 }
 
 .progm-name {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 55%;
-  
+
   padding-left: 2%;
 }
 
@@ -58,13 +55,17 @@ i {
 }
 
 #byslogo {
-  text-align: center;
-  width: 10%;
+  width: 50%;
   padding: 10px;
 }
 #options {
   font-size: medium;
   text-align: right;
+}
+
+a {
+  color: rgb(248, 252, 252);
+  text-decoration: none;
 }
 
 /* ---------------- Apresentação ---------------- */
@@ -75,7 +76,7 @@ i {
 #funcA-output1 {
   font-size: 150%;
 }
-#funcA-output2 {
+#funcA-output2 {padding-bottom: 1%;
   font-size: 120%;
 }
 #hand {
@@ -123,11 +124,12 @@ i {
 
   i {
     margin-bottom: 4%;
-    font-size: 200%;
+    font-size: 150%;
     display: flex;
   }
 
-  .progm-name {font-size: 50%;
+  .progm-name {
+    font-size: 50%;
     font-family: sans-serif;
 
     padding-left: 2%;
