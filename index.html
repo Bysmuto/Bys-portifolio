@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300&display=swap"
-      rel="stylesheet"/>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-
     <title>Bysmuto</title>
   </head>
 
   <body>
 
-    
-    <!-- barra de menu  -->
-    <div class="menubar">
-       <a href="../index.html"><img src="img/bys.png" id="byslogo" /></a>
-
-      <div id="options">
-        <a href="pages/program.html">Programação</a>
-        <a href="pages/design.html">Design</a>
-        <a href="pages/contato.html">Contato</a>
-
+    <!-- menu -->
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="index.html"><img src="img/bys.png" id="logo" /></a>
       </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="pages/program.html">Programação</a></li>
+          <li><a href="pages/design.html">Design</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-
-    </div>
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+    <!---->
 
     <!-- Apresentação  -->
     <div id="func0"></div>
@@ -43,23 +56,47 @@
       <!-- func  -->
       <div class="func">
         <p id="funcA">
-          <span class="func-color">Apresentação</span> (
-          <span class="parametro">bysmuto</span> ) ;
+          <span class="func-color">Apresentação</span>
+          (<span class="parametro">bysmuto</span>) ;
         </p>
       </div>
       <!-- output  -->
       <div class="output" id="outputA">
         <p id="funcA-output1" class="func-output">
-          Oi <span id="hand">&#128075;</span> , meu nome é Sebastião .
+          Oi <span id="hand">&#128075;</span> , meu nome é <br />
+          Sebastião Victor .
         </p>
         <p id="funcA-output2" class="func-output">
           Tenho 20 anos, atualmente <br />
           curso Desenvolvimeto Full Stack <br />
-          pela Universidade Estacio,<br />
-          e atuo como designer grafico
+          pela Universidade Estácio,<br />
+          e atuo como designer gráfico
         </p>
       </div>
     </div>
+
+    <!-- Projetos  -->
+    <div class="func">
+      <!-- func  -->
+
+      <p id="funcP">
+        <span class="func-color">Projetos</span> (
+        <span class="parametro"></span> ) ;
+      </p>
+    </div>
+    <!-- output  -->
+
+    <a href="pages/program.html" id="link1">
+      <div id="outputP1" class="func-output">
+        Programação = [<span class="dots"> ... </span>]
+      </div>
+    </a>
+    <a href="pages/design.html" id="link2">
+    <div id="outputP2" class="func-output">
+      
+        Design = [<span class="dots"> ... </span>]
+      
+    </div></a>
 
     <!-- RecursoD  -->
     <div class="func">
@@ -88,7 +125,6 @@
 
     <!-- fim site  -->
 
-    
     <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

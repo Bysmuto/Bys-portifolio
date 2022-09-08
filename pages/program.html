@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-  <div class="menubar">
-    <a href="../index.html"><img src="/img/bys.png" id="byslogo" /></a>
 
-    <div id="options">
-      <a href="program.html">Programação</a>
-      <a href="design.html">Design</a>
-      <a href="contato.html">Contato</a>
+
+  <!-- menu -->
+  <nav class="navbar">
+    <div class="brand-title">
+      <a href="../index.html"><img src="../img/bys.png" id="logo" /></a>
     </div>
-  </div>
- 
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="program.html">Programação</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    const toggleButton = document.getElementsByClassName("toggle-button")[0];
+    const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+    toggleButton.addEventListener("click", () => {
+      navbarLinks.classList.toggle("active");
+    });
+  </script>
+  <!---->
+
+
 </body>
 </html>

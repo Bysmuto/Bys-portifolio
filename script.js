@@ -13,18 +13,14 @@ function delayO(id, index) {
   element.style.animationDelay = `${time}s`;}
 
 
-let funcs = ["funcA", "funcRd", "funcRp"];
+let funcs = ["funcA",'funcP',"funcRd", "funcRp",];
+
 
 funcs.forEach(delayF);
 
-let outputs = [ "outputA","outputRd", "outputRp"]
+let outputs = [ "outputA",'outputP1','outputP2',"outputRd", "outputRp",]
 
 outputs.forEach(delayO)
-
-let funcC = ['funcC1','funcC2','funcC3']
-
-
-
 
 
 // Programas 
@@ -42,7 +38,7 @@ let progmsD = ['photoshop','illustrator','figma']
 
 progmsD.forEach((item => {programs('outputRd',item)}))
 
-
 let progmsP = ['python','javascript','css3','html5','github','sqlite']
 
 progmsP.forEach((item)=>{programs('outputRp',item)})
+

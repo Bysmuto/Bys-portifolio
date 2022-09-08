@@ -5,51 +5,58 @@ let posts = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
 posts.forEach(element => {s0.push(`designimgs/posts/post (${element}).jpg`)});
 
 let s1 = [];
-let ogn = [1,2,3,4,5,6,7,8,9,10,11]
-ogn.forEach(element => {s1.push(`designimgs/ogn/ogn (${element}).png`)});
+let ogn = [1,2,3,4,5,7,8,9,10,11]
+ogn.forEach(element => {s1.push(`designimgs/ogn/ogn (${element})_2.png`)});
 
 let s2 = [];
-let mda = [1,2,3,4,5,6,7,]
-mda.forEach(element => {s2.push(`designimgs/mda/mda (${element}).png`)});
+let mda = [1,2,3,4,5,6,7]
+mda.forEach(element => {s2.push(`designimgs/mda/mda (${element})_2.png`)});
 
 let s3 = [];
-let dmx = [1,2,3,4,5,6,]
-dmx.forEach(element => {s3.push(`designimgs/dmx/dmx (${element}).jpg`)});
+let dmx = [1,2,3,]
+dmx.forEach(element => {s3.push(`designimgs/dmx/dmx (${element})_2.png`)});
 
-let s4 = [];
-let gus = [1,2,3,4,]
-gus.forEach(element => {s4.push(`designimgs/gus/gus (${element}).jpg`)});
+let s4 = ["designimgs/gus/gus (1).jpg"];
+let gus = [1,2]
+gus.forEach(element => {s4.push(`designimgs/gus/gus (${element})_2.png`)});
 
 let s5 = [];
-let pet = [1,2,3,4,5,6,7,8,9,10,11,12,13]
-pet.forEach(element => {s5.push(`designimgs/pet/pet (${element}).png`)});
+let pet = [1,2,5,6,7,8,9,10,11,12,13]
+pet.forEach(element => {s5.push(`designimgs/pet/pet (${element})_2.png`)});
 
 let descri = [
-  `A Proposta da campanha que foi motivada pelo Janeiro Branco, é de clarificar conceitos como saúde 
-   mental e autoconhecimento através de posts com frases reflexivas `,
+  `<span id='titulo'># Saúde mental importa</span> <br><br>
+  Campanha personalizada motivada pelo Janeiro Branco, com o objetivo 
+  de clarificar conceitos da saúde 
+  mental através de posts com frases reflexivas <br><hr> `,
     
-  `A empresa realizou uma reestruturação  
+  `<span id='titulo'>OGN corretores orgânicos</span> <br><br>
+  A empresa realizou uma reestruturação  
   e necessitava de uma nova identidade que fosse mais 
   moderna se encaixa-se nos padrões atuais, porém que ainda 
   recordasse a identidade já estabelecida ao longo de 20 anos 
-  no mercado imobiliário da zona sul do Rio de Janeiro`,
+  no mercado imobiliário da zona sul do Rio de Janeiro<br><hr>`,
 
-  `O cliente, um casal que esta na área de odontologia a anos, 
+  `<span id='titulo'>Mauro de Avila </span> <br><br>
+  O cliente, um casal que esta na área de odontologia a anos, 
   precisava de uma identidade visual mais moderna e que 
-  transmitisse a qualidade do seu trabalho`,
+  transmitisse a qualidade do seu trabalho<br><hr>`,
 
-  `O cliente precisava de uma identidade simples e 
+  `<span id='titulo'>DMX multimarcas</span> <br><br>
+  O cliente precisava de uma identidade simples e 
   direta para seu novo negocio fisico e digital, 
   focado essencialmente na revenda de sapatos originais a
-  preço de fábrica`,
+  preço de fábrica<br><hr>`,
 
-  `O cliente precisava fosse elaborado de forma técnica a 
+  `<span id='titulo'>Guzmão imóveis</span> <br><br>
+  O cliente precisava fosse elaborado de forma técnica a 
   ideia que teve para sua 
-  logo de uma recém criada imobiliária`,
+  logo de uma recém criada imobiliária<br><hr>`,
 
-  `A cliente requeria de uma identidade visual
+  `<span id='titulo'>Pet eternizado</span> <br><br>
+  A cliente requeria de uma identidade visual
   que reproduzisse a natureza sentimental do seu projeto, que busca perpetuar a lembrança de animais de estimação já falecidos, transformando alguma parte
-  deixada em peças de joias `
+  deixada em peças de joias<br><hr> `
 
 ];
 

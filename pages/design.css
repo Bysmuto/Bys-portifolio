@@ -1,49 +1,56 @@
 body {
+  background-image: url("../img/img2.jpg");
+  background-size: 20%;
+  background-blend-mode: overlay;
   font-family: "Open Sans", sans-serif;
-  color: rgb(248, 252, 252);
-  font-weight: 700;
-  background-color: rgb(27, 22, 27);
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 24, 32);
+  animation: animatedBackground 50s ease infinite;
 }
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: 100px 0px;
+  }
+
+  40% {
+    background-position: 0px 100px;
+  }
+
+  100% {
+    background-position: 100px 0px;
+  }
+}
+
 .design {
+  text-align: center;
   margin: auto;
-  padding-left: 10%;
+  display: block;
   padding-bottom: 5%;
+  padding-top: 5%;
   font-size: 320%;
+}
+
+#fecha {
+  font-size: 350%;
+  padding-top: 0%;
 }
 
 .boxes {
   object-fit: contain;
   margin: auto;
-  width: 450px;
+  width: 550px;
 }
 
 .boxes img {
+  object-fit: contain;
   border-radius: 2%;
   width: 100%;
   height: 100%;
-}
-
-.S0 {
-  object-fit: contain;
-}
-.S1 {
-  object-fit: cover;
-
-}
-.S2 {
-  object-fit: cover;
-}
-.S3 {
-  object-fit: cover;
-}
-.S4 {
-  object-fit: cover;
-}
-.S5 {
-  object-fit: cover;
-}
-.S1 {
-  object-fit: cover;
 }
 
 .box {
@@ -56,20 +63,23 @@ body {
 }
 
 button {
-  background-color: #0fd4f71f; /* Green */
+  font-weight: bold;
+  background-color: #12c6d310; /* Green */
   border: none;
   color: white;
-  border-radius: 20%;
-  text-align: center;
+  border-radius: 2%;
+  padding-bottom: 2px;
+  width: 5%;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+  font-size: 26px;
+  text-align: center;
 }
 
 .bs {
   display: flex;
   justify-content: space-between;
-  width: 120%;
+  width: 105%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,7 +87,15 @@ button {
   margin: auto;
 }
 
+#titulo {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-style: normal;
+}
+
 .info {
+  font-weight: 700;
+  font-style: italic;
   margin-bottom: 50px;
   width: 80%;
   word-wrap: break-word;
@@ -85,64 +103,142 @@ button {
   color: aliceblue;
 }
 
+hr {
+  margin-bottom: 20%;
+}
 /* ---------------- Menubar ---------------- */
-.menubar {
-  align-items: center;
+/* menu */
+
+.navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  background-color: rgb(26, 21, 26);
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0);
+  color: white;
 }
 
-#byslogo {
-  width: 50%;
-  padding: 10px;
-}
-#options {
-  font-size: medium;
-  text-align: right;
+.brand-title {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
 }
 
-a {
-  color: rgb(248, 252, 252);
+#logo {
+  width: 25%;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
   text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  border-radius: 2%;
+  background-color: rgba(22, 221, 221, 0.137);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.85rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: left;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
 /* ---------------- Mobile ---------------- */
 
 @media (max-width: 600px) {
+  body{background-size: 70%;}
+  .boxes {
+    object-fit: contain;
+    margin: auto;
+    width: 300px;
+  }
+
+  button {
+    background-color: transparent;
+    color: rgba(10, 129, 138, 0.534);
+  }
+
   #byslogo {
     text-align: center;
     width: 20%;
     padding: 10px;
   }
-
-  .func {
-    padding-left: 4%;
+  #titulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .info {
+    color: rgb(220, 227, 233);
   }
 
-  .func-output {
-    padding-left: 12%;
+  .design {
+    padding-bottom: 15%;
   }
 
-  #funcA-output1 {
-    font-size: 150%;
-  }
-  #funcA-output2 {
-    font-size: 110%;
-    padding-bottom: 2%;
-  }
-
-  i {
-    margin-bottom: 4%;
-    font-size: 150%;
-    display: flex;
-  }
-
-  .progm-name {
-    font-size: 50%;
-    font-family: sans-serif;
-
-    padding-left: 2%;
-    padding-top: 4%;
+  hr {
+    margin-bottom: 10%;
   }
 }
