@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="program.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- menu -->
+    <nav class="navbar">
+      <div class="brand-title">
+        <a href="../index.html"><img src="../img/bys.png" id="logo" /></a>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="program.html">Programação</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+    <!---->
 
-  <!-- menu -->
-  <nav class="navbar">
-    <div class="brand-title">
-      <a href="../index.html"><img src="../img/bys.png" id="logo" /></a>
+    <h1 class="lista" id="Lp">Programação = [</h1>
+    <div class="box" >
+
+      <div class="programa" >
+        <img src="Pimg/1.png" >
+      </div>
+      <p class="texto"><span class="titulo">Central de ferramentas</span>  <br><br>
+        O projeto é um software feito em Python para o gerenciamento de ferramentas e de técnicos de uma empresa, 
+        onde é possível verificar ferramenta e técnicos cadastrados no banco de dados, como fazer 
+        a requisição de reservas 
+        para ouso de certa ferramenta e a exportação desses dados. 
+        <br><br><a href="https://github.com/Bysmuto/Projeto-Estacio-Central#readme"target="_blank" >
+          <button> Github repositório</button> </a> 
+         <hr></p>
+
+      <div class="programa" >
+        <img src="Pimg/2.png" >
+      </div>
+      <p class="texto"><span class="titulo">Portifólio online</span>  <br><br>
+        site responsivo criado com HTML CSS Javascript, para hospedar projetos relacionados a programação
+        <br><br><a href="https://github.com/Bysmuto/Bys-portifolio#readme"target="_blank" >
+          <button> Github repositório</button> </a> 
+         <hr></p>
+      
+
+          <p id="fecha">]</p>
     </div>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="program.html">Programação</a></li>
-        <li><a href="design.html">Design</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-  <script>
-    const toggleButton = document.getElementsByClassName("toggle-button")[0];
-    const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
-    toggleButton.addEventListener("click", () => {
-      navbarLinks.classList.toggle("active");
-    });
-  </script>
-  <!---->
-
-
-</body>
+    
+  </body>
 </html>
