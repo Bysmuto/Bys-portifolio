@@ -170,7 +170,33 @@ hr {
   #Lp {
     font-size: 220%;
     padding: 0%;
+    padding-top: 10%;
   }
+
+
+  .programa{width: 80%;}
+  .texto {
+    font-weight: 700;
+    padding: 0%;
+    width: 60%;
+    margin: auto;
+
+  }
+  .titulo{width: 100%;}
+
+  button{font-size: x-large;
+    font-weight: bolder;
+  padding: 5%;
+width: 100%;}
+
+  hr {
+    margin: auto;
+    margin-top: 5%;
+    width: 60%;
+    margin-bottom: 10%;
+  }
+
+
 
   .navbar {
     flex-direction: column;
