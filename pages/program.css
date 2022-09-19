@@ -1,4 +1,7 @@
 * {
+  text-decoration: none;
+  outline: none;
+  border: none;
   margin: 0%;
   padding: 0%;
 }
@@ -46,12 +49,15 @@ body {
 }
 
 img {
+  border-radius: 5%;
+
   display: block;
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
 .titulo {
+  color: rgba(10, 187, 210, 0.655);
   font-weight: bolder;
   text-align: center;
   margin: auto;
@@ -59,23 +65,49 @@ img {
   font-size: x-large;
 }
 
-.texto {
+.texto,
+.bts {
   font-weight: 600;
   padding-top: 2%;
   width: 40%;
   margin: auto;
   padding-left: 5%;
 }
+.bts {
+  display: flex;
+  gap: 5%;
+}
 
 button {
+  border: 1px solid rgba(255, 255, 255, 0.172);
+  cursor: pointer;
+  background-color: rgba(13, 223, 247, 0.259);
   margin: auto;
-  border-radius: 5%;
+  border-radius: 2%;
+
   font-family: "Open sans", sans-serif;
+  font-weight: 700;
   padding: 1%;
-  font-size: large;
+  font-size: x-large;
+  color: white;
 }
-button:hover {
-  background-color: rgb(10, 184, 169);
+
+.bts button {
+  padding: 10%;
+  height: 100%;
+}
+.recursos {
+  
+  font-size: large;
+  padding-top: 2%;
+  width: 40%;
+  margin: auto;
+  padding-left: 5%;
+}
+
+i {
+  font-size: 200%;
+  padding: 1%;
 }
 
 hr {
@@ -167,27 +199,50 @@ hr {
 }
 
 @media (max-width: 600px) {
+
+  .recursos{padding-left: 0%;padding-right: 15%;}
+
+  .bts {
+    display: flex;
+    padding: 0;
+    gap: 10%;
+
+    width: 60%;
+  }
+
+  .bts button {
+    border-radius: 2%;
+    width: 120%;
+    height: 100%;
+    font-size: medium;
+    display: inline;
+  }
+
   #Lp {
     font-size: 220%;
     padding: 0%;
     padding-top: 10%;
   }
 
-
-  .programa{width: 80%;}
+  .programa {
+    width: 80%;
+  }
   .texto {
     font-weight: 700;
     padding: 0%;
     width: 60%;
     margin: auto;
-
   }
-  .titulo{width: 100%;}
+  .titulo {
+    width: 100%;
+  }
 
-  button{font-size: x-large;
+  button {
+    font-size: x-large;
     font-weight: bolder;
-  padding: 5%;
-width: 100%;}
+    padding: 5%;
+    width: 100%;
+  }
 
   hr {
     margin: auto;
@@ -195,8 +250,6 @@ width: 100%;}
     width: 60%;
     margin-bottom: 10%;
   }
-
-
 
   .navbar {
     flex-direction: column;

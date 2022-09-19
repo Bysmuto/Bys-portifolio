@@ -41,4 +41,3 @@ progmsD.forEach((item => {programs('outputRd',item)}))
 let progmsP = ['python','javascript','css3','html5','github','sqlite']
 
 progmsP.forEach((item)=>{programs('outputRp',item)})
-

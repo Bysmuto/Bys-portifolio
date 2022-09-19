@@ -5,7 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+  /> 
+    <title>Programação</title>
+    
   </head>
   <body>
     <!-- menu -->
@@ -39,43 +44,98 @@
     <h1 class="lista" id="Lp">Programação = [</h1>
 
     <div class="box" >
+      <div class="programa" >
+        <img src="Pimg/4.png" >
+      </div>
+      <p class="texto"> <span class="titulo"> OFF-META </span>  <br><br>
+        O site é um blog pessoal feito para gravar modos diferentes de se jogar com 
+        personagens do jogo League of Legends
+        <br><br>
+        Recursos : 
+        <div id="recursos4"class="recursos"></div>
+        <br><br>
+        <div class="bts">
+        <a href="https://juninho-off-meta.vercel.app/"target="_blank" >
+          <button> Link </button> </a> 
+          <a href="https://github.com/Bysmuto/Juninho-off-meta#readme"target="_blank" >
+            <button> Código </button> </a> 
+          </div>
+         <hr>
+        </p>
+
 
       <div class="programa" >
         <img src="Pimg/3.png" >
       </div>
       <p class="texto"><span class="titulo"> Praticamente </span>  <br><br>
-     Uma calculadora online feita com Javascript HTML CSS, que automaticamente arredonda para o resultado em decimal para o numero inteiro mais proximo
+     Uma calculadora online que automaticamente arredonda
+      para o resultado em decimal para o numero inteiro mais proximo
         <br><br>
+        Recursos : <div id="recursos3"class="recursos"></div>
+        <br><br>
+        <div class="bts">
         <a href="Pimg/Calculadora/calculadora.html"target="_blank" >
-          <button> link </button> </a> 
+          <button> Link </button> </a> 
+          <a href="https://github.com/Bysmuto/Calculadora-Aproximada#readme"target="_blank" >
+            <button> Código </button> </a> 
+        </div>
          <hr></p>
 
       <div class="programa" >
         <img src="Pimg/1.png" >
       </div>
       <p class="texto"><span class="titulo">Central de ferramentas</span>  <br><br>
-        O projeto é um software feito em Python para o gerenciamento de ferramentas e de técnicos de uma empresa, 
+        O projeto é um software para o gerenciamento de ferramentas e de técnicos de uma empresa, 
         onde é possível verificar ferramenta e técnicos cadastrados no banco de dados, como fazer 
         a requisição de reservas 
         para ouso de certa ferramenta e a exportação desses dados. 
         <br><br>
+        Recursos : <div id="recursos2"class="recursos"></div>
+        <br><br>
+        <div class="bts">
         <a href="https://github.com/Bysmuto/Projeto-Estacio-Central#readme"target="_blank" >
-          <button> código </button> </a> 
+          <button> código </button> </a> </div>
          <hr></p>
 
       <div class="programa" >
         <img src="Pimg/2.png" >
       </div>
       <p class="texto"><span class="titulo">Portifólio online</span>  <br><br>
-        site responsivo criado com HTML CSS Javascript, para hospedar projetos relacionados a programação
+        site responsivo para hospedar projetos<br> relacionados a programação  e design
         <br><br>
+        Recursos : 
+        <div id="recursos1" class="recursos"></div>
+        <br><br>
+        <div class="bts">
+          <a href="https://bysmuto.com/"target="_blank" >
+            <button> Link </button> </a> 
         <a href="https://github.com/Bysmuto/Bys-portifolio#readme"target="_blank" >
-          <button> código </button> </a> 
+          <button> código </button> </a> </div>
          <hr></p>
       
 
           <p id="fecha">]</p>
     </div>
+
+    <script>
+      console.log('krl')
+    function programs (id,program){
+      let ids = document.getElementById(id);
+      let element = document.createElement('i')
+      element.className = `devicon-${program}-plain`
+      ids.appendChild(element)}
+
+      
+let recursos1 = ['javascript','css3','html5']
+recursos1.forEach(item => {programs('recursos1',item)})
+recursos1.forEach(item => {programs('recursos3',item)})
+recursos1.forEach(item => {programs('recursos4',item)})
+
+let recursos2 = ['python','sqlite']
+recursos2.forEach(item => {programs('recursos2',item)})
+
+
+    </script>
 
     
   </body>
