@@ -3,7 +3,7 @@ body {
   background-size: 20%;
   background-blend-mode: overlay;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   color: rgb(255, 255, 255);
   background-color: rgb(27, 24, 32);
   animation: bg 50s ease infinite;
@@ -144,7 +144,7 @@ hr {
   list-style: none;
 }
 
-.navbar-links li a {
+.navbar-links li a { font-size: 120%;
   display: block;
   text-decoration: none;
   color: white;

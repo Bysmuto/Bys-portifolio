@@ -13,12 +13,12 @@ function delayO(id, index) {
   element.style.animationDelay = `${time}s`;}
 
 
-let funcs = ["funcA",'funcP',"funcRd", "funcRp",];
+let funcs = ["funcA",'funcP',"funcRd", "funcRp","funcCV"];
 
 
 funcs.forEach(delayF);
 
-let outputs = [ "outputA",'outputP1','outputP2',"outputRd", "outputRp",]
+let outputs = [ "outputA",'outputP1','outputP2',"outputRd", "outputRp","outputCV"]
 
 outputs.forEach(delayO)
 

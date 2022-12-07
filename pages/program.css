@@ -1,17 +1,10 @@
-* {
-  text-decoration: none;
-  outline: none;
-  border: none;
-  margin: 0%;
-  padding: 0%;
-}
 
 body {
   background-image: url("../img/img2.jpg");
   background-size: 20%;
   background-blend-mode: overlay;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   color: rgb(255, 255, 255);
   background-color: rgb(27, 24, 32);
   animation: bg 50s ease infinite;
@@ -133,7 +126,6 @@ hr {
 }
 
 /* menu */
-
 .navbar {
   display: flex;
   position: relative;
@@ -169,6 +161,7 @@ hr {
 }
 
 .navbar-links li a {
+  font-size: 120%;
   display: block;
   text-decoration: none;
   color: white;
@@ -197,6 +190,7 @@ hr {
   background-color: white;
   border-radius: 10px;
 }
+
 
 @media (max-width: 600px) {
 
